@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Time tracking dashboard" />
+    <meta name="keywords" content="HTML,CSS,JavaScript, API" />
+    <meta name="author" content="Thu Smiley" />
+    <meta property="og:image" content="./images/desktop-preview.jpg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Time tracking dashboard</title>
+  </head>
+  <body>
+    <main>
+      <!-- Report header -->
+      <div class="report">
+        <div class="report-top">
+          <img src="./images/image-jeremy.png" alt="" />
+          <div class="user">
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+
+        <div class="report-bottom">
+          <a href="#" id="daily" onclick="getDaily()">Daily</a>
+          <a href="#" id="weekly" onclick="getWeekly()">Weekly</a>
+          <a href="#" id="monthly" onclick="getMonthly()">Monthly</a>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <!-- Work -->
+      <div class="stat-wrapper">
+        <div class="work-bg bg"></div>
+        <div class="stat" id="work">
+          <div class="category">
+            <h2>Work</h2>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="card">
+            <h3 class="work-current"></h3>
+            <p class="work-previous"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Play -->
+      <div class="stat-wrapper">
+        <div class="play-bg bg"></div>
+
+        <div class="stat" id="play">
+          <div class="category">
+            <h2>Play</h2>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="card">
+            <h3 class="play-current"></h3>
+            <p class="play-previous"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Study -->
+      <div class="stat-wrapper">
+        <div class="study-bg bg"></div>
+
+        <div class="stat" id="study">
+          <div class="category">
+            <h2>Study</h2>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="card">
+            <h3 class="study-current"></h3>
+            <p class="study-previous"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exercise -->
+      <div class="stat-wrapper">
+        <div class="exercise-bg bg"></div>
+
+        <div class="stat" id="exercise">
+          <div class="category">
+            <h2>Exercise</h2>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="card">
+            <h3 class="exercise-current"></h3>
+            <p class="exercise-previous"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social -->
+      <div class="stat-wrapper">
+        <div class="social-bg bg"></div>
+
+        <div class="stat" id="social">
+          <div class="category">
+            <h2>Social</h2>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="card">
+            <h3 class="social-current"></h3>
+            <p class="social-previous"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Self Care -->
+      <div class="stat-wrapper">
+        <div class="selfcare-bg bg"></div>
+
+        <div class="stat" id="selfcare">
+          <div class="category">
+            <h2>Self Care</h2>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="card">
+            <h3 class="selfcare-current"></h3>
+            <p class="selfcare-previous"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
